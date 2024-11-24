@@ -25,7 +25,6 @@ const Pagination = ({ withPaginationButtons, prevPage, prevPageDisabled, limit =
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
 
-                        console.log('visible');
 
                         nextPage()
                     }
@@ -68,10 +67,10 @@ const Pagination = ({ withPaginationButtons, prevPage, prevPageDisabled, limit =
             {
                 withPaginationButtons === 0 && (
                     <>
-                        <span>
-                            Current Page: {pageNumber}
+                        <span className="showSmall500">
+                            Current Page: {pageNumber}/{Math.ceil(dataLength / showItemes)}
                         </span>
-                        <div className="df g0dot5 aic jcc">
+                        <div className="df g0dot5 aic jcc hideSmall500">
                             {generatePagination()}
                         </div>
 

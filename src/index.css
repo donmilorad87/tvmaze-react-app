@@ -353,3 +353,20 @@ a {
     gap: 2rem;
   }
 }
+
+@media (min-width: 0px) {
+  .showSmall500 {
+    display: flex;
+  }
+  .hideSmall500 {
+    display: none;
+  }
+}
+@media (min-width: 500px) {
+  .showSmall500 {
+    display: none;
+  }
+  .hideSmall500 {
+    display: flex;
+  }
+}
