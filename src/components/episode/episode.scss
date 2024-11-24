@@ -1,0 +1,45 @@
+.episodeItem {
+  @media (min-width: 0px) {
+    min-width: calc((100% - 1rem) / 2);
+    max-width: calc((100% - 1rem) / 2);
+    width: calc((100% - 1rem) / 2);
+  }
+  @media (min-width: 768px) {
+    min-width: calc((700px - 2rem) / 3);
+    max-width: calc((700px - 2rem) / 3);
+    width: calc((700px - 2rem) / 3);
+  }
+  @media (min-width: 1024px) {
+    min-width: calc((1000px - 3rem) / 4);
+    max-width: calc((1000px - 3rem) / 4);
+    width: calc((1000px - 3rem) / 4);
+  }
+  @media (min-width: 1280px) {
+    min-width: calc((1200px - 5rem) / 6);
+    max-width: calc((1200px - 5rem) / 6);
+    width: calc((1200px - 5rem) / 6);
+  }
+  img {
+    width: 100%;
+    min-height: 310.44px;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  }
+  .ratingStars {
+    img {
+      width: 18px;
+      height: 18px;
+      min-height: 18px;
+    }
+  }
+}
+.threedotstext {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  max-height: calc(1.5em * 3);
+}

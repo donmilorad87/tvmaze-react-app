@@ -1,0 +1,35 @@
+.showCastInfoItem {
+  h3 {
+    min-width: 160px;
+    text-align: left;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .showCastInfoItem {
+    h3 {
+      color: #ebebeb;
+    }
+    p {
+      color: #c2c2c2;
+    }
+  }
+}
+@media (prefers-color-scheme: light) {
+  .showCastInfoItem {
+    h3 {
+      color: #242424;
+    }
+    p {
+      color: #424242;
+    }
+  }
+}
+
+.actorImage {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}

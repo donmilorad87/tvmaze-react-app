@@ -1,0 +1,24 @@
+.showImageRes {
+  @media (min-width: 0px) {
+    width: 100%;
+    height: auto;
+  }
+  @media (min-width: 500px) {
+    height: 400px;
+    width: auto;
+  }
+}
+.description {
+  p {
+    margin: 0;
+  }
+}
+
+.showTitle {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 10px;
+}

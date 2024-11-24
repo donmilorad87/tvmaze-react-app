@@ -1,0 +1,27 @@
+.showInfoItem {
+  h3 {
+    min-width: 140px;
+    text-align: left;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .showInfoItem {
+    h3 {
+      color: #ebebeb;
+    }
+    p {
+      color: #c2c2c2;
+    }
+  }
+}
+@media (prefers-color-scheme: light) {
+  .showInfoItem {
+    h3 {
+      color: #242424;
+    }
+    p {
+      color: #424242;
+    }
+  }
+}
